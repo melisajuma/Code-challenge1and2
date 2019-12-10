@@ -16,4 +16,5 @@ def memoize(callback):
     def caching(num):
         if num in cache.keys():
             return cache[num]
+        cache[num]=callback(num)
         
