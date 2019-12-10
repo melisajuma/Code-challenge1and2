@@ -12,4 +12,5 @@ def prime(num):
         return False
 
 def memoize(callback):
+    cache={}
    
