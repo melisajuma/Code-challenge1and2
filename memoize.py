@@ -11,3 +11,5 @@ def prime(num):
     else: 
         return False
 
+def memoize(callback):
+   
