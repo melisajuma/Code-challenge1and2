@@ -14,4 +14,6 @@ def prime(num):
 def memoize(callback):
     cache={}
     def caching(num):
-       
+        if num in cache.keys():
+            return cache[num]
+        
