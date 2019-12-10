@@ -1,2 +1,3 @@
-def search(array,num):
-    
+def search(list,num):
+    if num in list:
+        
