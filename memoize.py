@@ -17,4 +17,8 @@ def memoize(callback):
         if num in cache.keys():
             return cache[num]
         cache[num]=callback(num)
-        
+        return cache[num]
+    return caching
+
+p = memoize(prime)
+print(p(4))
